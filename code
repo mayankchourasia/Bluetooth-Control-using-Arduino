@@ -1,0 +1,6 @@
+char val;
+void setup() {
+  Serial.println(9600);
+  pinMode(13, OUTPUT);
+  Serial.print('S');
+}
