@@ -1,7 +1,7 @@
 char val;
 void setup() {
-  Serial.println(9600);
-  pinMode(13, OUTPUT);
+  Serial.println(9600);//to set baud rate
+  pinMode(13, OUTPUT);//defining the pin
   
 }
 
