@@ -2,5 +2,19 @@ char val;
 void setup() {
   Serial.println(9600);
   pinMode(13, OUTPUT);
-  Serial.print('S');
+  
 }
+
+void loop()
+{
+  if(Serial.available())  
+  {
+    data=Serial.read();
+    Serial.print(data);
+    if(data=='A')
+    digitalWrite(13,HIGH);
+      else if(data=='B')
+    digitalWrite(13,LOW);    
+  }
+}
+
